@@ -1,0 +1,32 @@
+================================================================================
+BASE DE CONHECIMENTO CORPORATIVO - TECHCORP INTERNAL KNOWLEDGE BASE (v2.4)
+================================================================================
+
+[1. POLÍTICA DE SEGURANÇA E ACESSO DE SENHAS]
+- Requisitos de Complexidade: Mínimo de 12 caracteres, obrigatório conter letras maiúsculas, minúsculas, números e caracteres especiais (!@#$%^&*).
+- Ciclo de Expiração: Troca obrigatória a cada 90 dias. O sistema enviará alertas automáticos com 14 dias de antecedência.
+- Procedimento de Redefinição: O usuário deve acessar o portal de autoatendimento em https://portal.techcorp.internal/reset-password utilizando o token MFA (Microsoft Authenticator).
+- Bloqueio de Conta: Após 3 tentativas consecutivas incorretas, a conta é bloqueada automaticamente por 30 minutos. Para desbloqueio imediato, acesse o chat de emergência da central.
+
+[2. INFRAESTRUTURA DE REDE E GUIA DE VPN]
+- Cliente Oficial: GlobalProtect Palo Alto Networks (versão 6.0 ou superior).
+- Endereço do Gateway / Servidor VPN: vpn.techcorp.internal
+- Protocolo de Autenticação: SSO corporativo integrado com Azure Active Directory + MFA obrigatório.
+- Falhas Comuns de Conexão:
+  * Erro "Certificado Inválido": Verifique se a data e hora do sistema operacional estão sincronizadas com o NTP corporativo.
+  * Erro "Timeout de Conexão": Confirme se a rede Wi-Fi local não está bloqueando portas UDP 4500 e 500.
+
+[3. PARQUE DE IMPRESSÃO E COMPARTILHAMENTO DE DISPOSITIVOS]
+- Rede Wi-Fi Autorizada: "TechCorp-Office" (5GHz). Redes "Guest" não possuem acesso às impressoras de rede.
+- Mapeamento de Impressoras: As filas de impressão são mapeadas via Active Directory automaticamente baseadas no departamento do colaborador.
+- Falhas de Spooler: Caso a fila travou, abra o PowerShell como Administrador e execute: 
+  Restart-Service -Name Spooler -Force
+
+[4. PROTOCOLO DE ABERTURA DE CHAMADOS TIER 2 / TIER 3]
+- Critérios para Escalonamento: Erros de hardware, falhas físicas de equipamentos, problemas de licença de software proprietário ou indisponibilidade de servidores locais.
+- Canais Oficiais: 
+  * E-mail prioritário: suporte.ti@techcorp.internal
+  * Portal de Chamados: https://jira.techcorp.internal/servicedesk
+- SLA de Resposta: 
+  * Prioridade Crítica (Inatividade total): Até 1 hora.
+  * Prioridade Média/Baixa (Dúvidas e requisições): Até 8 horas úteis.

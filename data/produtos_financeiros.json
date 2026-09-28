@@ -1,0 +1,8 @@
+{
+  "software_suportado": [
+    {"id": "SW-01", "nome": "GlobalProtect VPN", "versao": "6.0+", "categoria": "Rede"},
+    {"id": "SW-02", "nome": "Jira Service Desk", "versao": "Cloud", "categoria": "Suporte"},
+    {"id": "SW-03", "nome": "Active Directory / Azure AD", "versao": "Enterprise", "categoria": "Identidade"},
+    {"id": "SW-04", "nome": "PowerShell Core", "versao": "7.2+", "categoria": "Automação"}
+  ]
+}

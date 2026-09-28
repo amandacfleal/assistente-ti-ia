@@ -1,0 +1,10 @@
+{
+  "perfil_usuario": {
+    "id": "EMP-8842",
+    "nome": "Amanda Souza",
+    "cargo": "Analista de Dados Sênior",
+    "departamento": "Inteligência de Negócios",
+    "nivel_acesso": "Tier 2",
+    "permissoes_especiais": ["VPN_Global", "Jira_Admin", "Docker_Engine"]
+  }
+}

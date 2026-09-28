@@ -1,0 +1,4 @@
+id_chamado,timestamp,colaborador,categoria,status,prioridade
+TICKET-101,2026-03-30 08:30:00,Amanda Souza,Política de Senhas,Fechado,Baixa
+TICKET-102,2026-03-30 10:15:00,Carlos Mendes,Guia de VPN,Em Andamento,Média
+TICKET-103,2026-03-30 14:00:00,Mariana Lima,Impressoras,Aberto,Baixa

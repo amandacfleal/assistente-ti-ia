@@ -1,0 +1,3 @@
+sessao_id,timestamp,usuario,pergunta,resposta_fornecida,status_resolucao
+SESS-01,2026-03-30 09:00:12,Amanda Souza,Como alterar minha senha?,Fornecido link de redefinição,Resolvido
+SESS-02,2026-03-30 11:20:45,Carlos Mendes,Erro de conexão VPN GlobalProtect,Instruído verificação de relógio NTP,Resolvido

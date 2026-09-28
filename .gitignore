@@ -1,0 +1,20 @@
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache e Compilação
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Streamlit Cache
+.streamlit/
+
+# Arquivos do Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
